@@ -10,7 +10,6 @@ const db = new Loki(dbPath, {
 });
 
 let users;
-
 function databaseInitialize() {
   users = db.getCollection("users");
   if (!users) {
